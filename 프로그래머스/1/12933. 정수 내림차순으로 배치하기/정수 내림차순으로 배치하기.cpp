@@ -30,8 +30,7 @@ long long solution(long long n) {
     }
     
     for(int i=0; i<nums.size(); i++) {
-        int t = pow(10, nums.size() - i - 1);
-        answer += nums.at(i) * t;
+        answer = answer * 10 + nums.at(i);
     }
     
     return answer;
